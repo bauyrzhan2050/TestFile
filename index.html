@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .page{
+            display: none;
+        }
+        .page.active{
+            display: block;
+        }
+        .tab-content{
+            display: none;
+        }
+
+    </style>
+</head>
+
+<body>
+            <menu>
+                <li><a href="#home" >home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#contact">contact</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+            </menu>
+<div id="home"  class="page active">
+    <h1>Home page</h1> 
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, facilis enim repellendus illo cum maiores esse magnam nihil ut voluptate ad consequuntur doloribus perferendis corrupti et blanditiis ullam alias! Maiores!</p>
+</div>
+<div id="about" class="page">
+    <h1>About Page</h1> 
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, facilis enim repellendus </p>
+   
+    <div class="tab">
+    <button class="tabLinks" onclick="openTabs(event, 'tabOne')">Tab1</button>
+    <button class="tabLinks" onclick="openTabs(event, 'tabTwo')"> Tab 2</button>
+    <button class="tabLinks" onclick="openTabs(event, 'tabThree')">Tab 3</button>
+   </div>
+
+<div class="tab-content" id="tabOne" >Line of Tabone</div>
+<div class="tab-content" id="tabTwo" >Line of Tabtwo</div>
+<div class="tab-content" id="tabThree" >Line of Tabthree</div>
+
+
+</div>
+<div id="contact" class="page">
+    <h1>Contact Page</h1> 
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, facilis enim repellendus illo cum maiores esse magnam nihil ut voluptate ad consequuntur doloribus perferendis corrupti et blanditiis ullam alias! Maiores!
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore beatae placeat totam eligendi nesciunt distinctio sequi quasi repudiandae provident necessitatibus nam, accusantium sit autem, voluptate ullam perferendis facere eum fugiat.
+    </p>
+</div>
+<div id="gallery" class="page">
+    <h1>Page</h1> 
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, facilis enim repellendus illo cum maiores esse magnam nihil ut voluptate ad consequuntur doloribus perferendis corrupti et blanditiis ullam alias! Maiores!
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore beatae placeat totam eligendi nesciunt distinctio sequi quasi repudiandae provident necessitatibus nam, accusantium sit autem, voluptate ullam perferendis facere eum fugiat.
+    </p>
+</div>
+
+    <script src="app.js"></script>
+</body>
+</html>
